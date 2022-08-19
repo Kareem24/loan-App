@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: -webkit-radial-gradient(top right, circle, #FFFCEB 20%,
+     rgba(255, 251, 229, 0) 45%);
+}
+hr{
+    border: none;
+    border-bottom: 6px solid  #FFD500;
+    width: 160px;
+    margin: 0 0 24px;
+    border-radius: 50px;
+}
+.container{
+    margin: 0 100px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    height: 200px;
+}
+.icon{
+    width: 100px;
+}
+.logo  img{
+    width: 80px;
+    margin: 30px 0;
+}
+.navlinks ul{
+    padding: 0 0 0 100px;
+}
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    
+}
+.navlinks ul li a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: right;
+    color: #969696;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: inline-flex;
+    transition: .6s;
+}
+.navlinks ul li a:hover{
+    color: black;
+    transform: scale(1.2);
+}
+.btn{
+    width: 200px;
+}
+.btn button{
+    padding: 27px 45px;
+    background: #FFD500;
+    border-radius: 27px;
+    border: none;
+    outline: none;
+}
+.btn button a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.home-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-col,.right-col{
+    flex-basis: 50%;
+    position: relative;
+}
+.left-child{
+margin-left: 100px;
+
+position: relative;
+}
+
+.left-child h1{
+    width: 100%;
+    font-family: Telegraf;
+    font-size: 7.5rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+}
+.left-child p{
+    font-family: DM Sans;
+        font-size: 2.3rem;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        margin: 40px 0;
+}
+.left-child img{
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: -1;
+}
+.contian{
+    width: 100%;
+    position: relative;
+}
+.contian .hand{
+    width: 90%;
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
+.contian .coin1{
+    width: 20%;
+    position: absolute;
+    right:40px ;
+    top: 20px;
+}
+.contian .coin2{
+    width: 20%;
+    position: absolute;
+    left: 220px;
+    top: 550px;
+    
+}
+.contian .coin3{
+    width: 20%;
+    position: absolute;
+    top: -20px;
+}
+
+/* getting started section start here  */
+
+
+.gettin-started{
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;position: relative;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.left-child h2{
+    font-family: DM Sans;
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 42px;
+        margin: 30px 0 15px;
+}
+.left-child a{
+    text-decoration: none;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+    margin-top: 36px;
+}
+.left-child .get-par{
+    margin: 0 0 36px;
+}
+.get-right-col{
+    flex-basis: 50%;
+    display: flex;
+}
+.contain-right{
+display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 10px;
+    margin-top:100px ;
+    width: 648px;
+    height: 694px;
+
+    background: #FFF7C7;
+    border-radius: 40px;
+}
+.contain-row{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+.contain-col{
+    width: 268px;
+        height: 267px;
+    
+        background: #FFFFFF;
+        border-radius: 15px;
+}
+.contain-row .move2{
+    align-self: flex-end;
+    margin-top: 40px;
+}
+.contain-row .move1{
+    align-self: flex-start;
+    margin-bottom: 40px;
+}
+.contain-row .content{
+    margin: 40px 20px;
+}
+.contain-row .content h4{
+    font-family: Telegraf;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 32px 0 16px;
+}
+.contain-row .content small{
+    font-family: DM Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
