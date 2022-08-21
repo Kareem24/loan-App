@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
 
 }
 html{
     font-size: 62.5%;
 }
+
 .main{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background: -webkit-radial-gradient(top right, circle, #FFFCEB 20%,
      rgba(255, 251, 229, 0) 45%);
 }
@@ -21,7 +23,7 @@ hr{
     border-radius: 50px;
 }
 .container{
-    margin: 0 100px;
+    margin: 0 100px 150px;
 }
 .navbar{
     display: flex;
@@ -83,7 +85,10 @@ hr{
     flex-direction: row;
     justify-content: space-between;
 }
-.left-col,.right-col{
+.left-col{
+    flex-basis: 50%;
+}
+.right-col{
     flex-basis: 50%;
     position: relative;
 }
@@ -103,7 +108,7 @@ position: relative;
 
 }
 .left-child p{
-    font-family: DM Sans;
+    font-family: 'DM Sans';
         font-size: 2.3rem;
         font-weight: 400;
         line-height: 30px;
@@ -119,7 +124,7 @@ position: relative;
 }
 .contian{
     width: 100%;
-    position: relative;
+    /* position: relative; */
 }
 .contian .hand{
     width: 90%;
@@ -127,23 +132,23 @@ position: relative;
     top: -80px;
     right: 0;
 }
-.contian .coin1{
-    width: 20%;
+ .coin{
+    width: 17%;
     position: absolute;
-    right:40px ;
-    top: 20px;
-}
-.contian .coin2{
-    width: 20%;
-    position: absolute;
-    left: 220px;
-    top: 550px;
     
 }
-.contian .coin3{
-    width: 20%;
-    position: absolute;
-    top: -20px;
+ .coin1{
+    right:50px ;
+    top: 0;
+}
+.coin2{
+    left: 200px;
+    bottom: -300px;
+    
+}
+ .coin3{
+    left: -50px;
+    top: -50px;
 }
 
 /* getting started section start here  */
@@ -151,8 +156,8 @@ position: relative;
 
 .gettin-started{
     width: 100%;
-    height: 100vh;
-    margin-top: 200px;position: relative;
+    margin: 200px 0 100px;
+    position: relative;
 }
 .row{
     display: flex;
@@ -163,37 +168,47 @@ position: relative;
 
 }
 .left-child h2{
-    font-family: DM Sans;
-        font-size: 3.2rem;
+    font-family: 'DM Sans';
+        font-size: 3rem;
         font-weight: 400;
         line-height: 42px;
         margin: 30px 0 15px;
 }
-.left-child a{
+.left-col .get-link{
+    margin-left: 100px;
+    width: 500px;
+
+}
+.left-col .get-link a{
     text-decoration: none;
-    font-family: DM Sans;
-    font-size: 24px;
+    font-family: 'DM Sans';
+    font-size: 2.4rem;
     font-weight: 700;
     line-height: 31px;
     text-align: left;
     margin-top: 36px;
+    margin-right: 19px;
+    color: #1A1A1A;
+   
 }
 .left-child .get-par{
-    margin: 0 0 36px;
+    margin: 0 20px  36px 0;
 }
 .get-right-col{
     flex-basis: 50%;
     display: flex;
+    
 }
 .contain-right{
 display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 40px;
-    gap: 10px;
-    margin-top:100px ;
-    width: 648px;
-    height: 694px;
+    
+    margin-top: 200px;
+    width: 600px;
+    height: 670px;
+    margin-left:80px;
 
     background: #FFF7C7;
     border-radius: 40px;
@@ -205,8 +220,8 @@ display: flex;
     
 }
 .contain-col{
-    width: 268px;
-        height: 267px;
+    width: 240px;
+        height: 260px;
     
         background: #FFFFFF;
         border-radius: 15px;
@@ -220,7 +235,7 @@ display: flex;
     margin-bottom: 40px;
 }
 .contain-row .content{
-    margin: 40px 20px;
+    margin: 30px 20px;
 }
 .contain-row .content h4{
     font-family: Telegraf;
@@ -231,9 +246,187 @@ display: flex;
     margin: 32px 0 16px;
 }
 .contain-row .content small{
-    font-family: DM Sans;
+    font-family: 'DM Sans';
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 21px;
     text-align: left;
+}
+.get-loan{
+    width: 100%;
+    margin: 200px 0 100px;
+}
+.get-loan-left{
+    flex-basis: 50%;
+}
+.get-loan-left .get-loan-img{
+    margin-left: 100px;
+}
+.get-loan-right{
+    flex-basis: 50%;
+}
+.get-loan-header h1{
+    font-family: 'Telegraf';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7rem;
+        line-height: 74px;
+        letter-spacing: -0.02em;
+    
+    
+        color: #1A1A1A;
+}
+
+/* the inner row in the get_loan-right  */
+.getLoan-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.getLoan-col{
+    flex-basis: 50%;
+}
+.getLoan-content{
+    width: 306px;
+    height: 206px;
+    
+    text-align: center;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.getLoan-col .first{
+    margin: 72px 0 32px;
+}
+
+.getLoan-content .text{
+    margin: 40px auto;
+    width: 300px;
+    /* text-align: center; */
+}
+.getLoan-content .text h3{
+    font-family: 'Telegraf';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.9rem;
+    line-height: 31px;
+    margin-bottom: 16px;
+    color: #1A1A1A;
+}
+.getLoan-content .text small{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 23px;
+        color: #343434;
+        
+
+}
+.get-loan-right .get-right-contain{
+    width: 100%;
+    
+}
+
+
+/* the Download App section  */
+.download-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.download-left-col{
+    flex-basis: 50%;
+}
+.left-content{
+    margin:400px 100px 0 150px ;
+}
+.left-content h1{
+font-family: Telegraf;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.download-btn{
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    margin-bottom: 160px;
+}
+.download-btn button{
+   display: flex;
+   align-items: center;
+    padding: 30px 60px;
+    border-radius: 23px;
+    margin:60px 60px 0 0;
+}
+.download-btn button a{
+    text-decoration: none;
+    font-family:" DM Sans";
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1A1A1A;
+    margin-left:20px;
+}
+.download-right-col{
+    flex-basis: 50%;
+   
+}
+.download-right-col .Download-right-img{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  
+}
+.Download-right-img .image{
+    
+    position: absolute;
+   
+
+}
+.Download-right-img .phone{
+    bottom: -62px;
+    right: 100px;
+    height: 900px;
+    width: 560px;
+}
+.Download-right-img .thumb{
+    top: 30px;
+    left: -180px;
+    height: 217.74522399902344px;
+        width: 217.74522399902344px;
+      
+}
+
+.color-box{
+    height: 668px;
+        width: 1488px;
+        position: absolute;
+        left: 120px;
+        bottom: 0;
+        transform: translate(-50%)-50%;
+        border-radius: 40px;
+        z-index: -1;
+        background: #FFD500;
+}
+.mask{
+    height: 668px;
+        width: 1488px;
+        position: absolute;
+        left: 120px;
+        bottom: 0;
+        transform: translate(-50%)-50%;
+        border-radius: 40px;
+        z-index: 3;
+        opacity: 30%;
 }
